@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    android:gravity="center_horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        >
+    
+      <ImageView
+    	android:id="@+id/iv_userImageView"
+    	android:layout_width="100dip"
+    	android:layout_height="100dip"
+	    android:clickable="true"
+	    android:onClick="userimagechange"
+	     />
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        >
+      
+    <TextView 
+        android:id="@+id/tv_ld_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bal $ 0"
+        android:textColor="#F05A2B"
+        android:gravity="center_vertical"
+        android:textSize="20sp"/>
+    
+    <Button
+            android:id="@+id/btnaddcredit"
+            android:layout_width="100dip"
+            android:layout_height="30dip"
+            android:text="ADD CREDIT"
+         	android:textStyle="bold"
+            android:textColor="#F05A2B"
+            android:background="@drawable/shape_btn_border_add_credit"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp" />
+    
+   </LinearLayout>
+    
+   </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+   		android:gravity="center_vertical"
+        android:background="#E6E6E6"
+        >
+
+    <TextView
+        android:id="@+id/txtData_username"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+      	android:textSize="18sp"
+      	android:textStyle="bold"
+      	android:gravity="bottom|left"
+        android:minHeight="10dp"
+        android:textColor="#666666"
+        android:text="Name"
+        />
+
+    <!-- 
+    <View android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="3"/>
+     -->
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/editnameicon"
+        android:clickable="true"
+        android:onClick="editusername" />
+
+    </RelativeLayout>
+
+    
+</LinearLayout>

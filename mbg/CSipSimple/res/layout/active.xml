@@ -1,0 +1,247 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+     
+	    <LinearLayout
+	        android:id="@+id/linearLayout3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/background"
+	            android:orientation="horizontal"
+	            android:padding="5dp" >
+
+	            <Button
+	                android:id="@+id/btn_viewcdr"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="34dp"
+	                android:layout_marginTop="2dp"
+	                android:text="View CDR"
+	                android:background="@drawable/buttonbackground"
+	                android:onClick="dispatch" />
+
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+
+	                <TextView
+	                    android:id="@+id/tv_activ_on"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="right"
+	                    android:text="Balance"
+	                    android:textAppearance="?android:attr/textAppearanceSmall"
+	                    android:textColor="#000000"
+	                    android:textStyle="bold" />
+
+	                <TextView
+	                    android:id="@+id/tv_expiry"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="right"
+	                    android:text="Expiry"
+	                    android:textAppearance="?android:attr/textAppearanceSmall"
+	                    android:textColor="#000000"
+	                    android:textStyle="bold" />
+
+	                <TextView
+	                    android:id="@+id/tv_value"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="right"
+	                    android:text="Activated"
+	                    android:textAppearance="?android:attr/textAppearanceSmall"
+	                    android:textColor="#000000"
+	                    android:textStyle="bold" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="5dp" >
+
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="120dp"
+	                android:layout_height="70dp"
+	                android:layout_alignParentTop="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="10dp"
+	                android:src="@drawable/logo_full_name" />
+	        </RelativeLayout>
+
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:text="@string/registerpin" />
+
+	        <TextView
+	            android:id="@+id/tv_pin"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="TextView"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        <TextView
+	            android:id="@+id/tvAcDetPIN"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:text="@string/mobileno" />
+
+	        <TableLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center" >
+
+	            <TableRow
+	                android:id="@+id/tableRow1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center" >
+
+	                <ImageView
+	                    android:id="@+id/countryflag"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:paddingRight="30dp" />
+
+	                <TextView
+	                    android:id="@+id/tv_mobile_no"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:text="TextView"
+	                    android:textAppearance="?android:attr/textAppearanceLarge"
+	                    android:layout_marginRight="30dp" />
+	            </TableRow>
+	        </TableLayout>
+
+	        <TextView
+	            android:id="@+id/tv_map_text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:text="@string/mappedto" />
+
+	        <TextView
+	            android:id="@+id/tv_mapped_no"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="TextView"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	        <TextView
+	            android:id="@+id/tv_mappingtext"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center"
+	            android:text="@string/currentlymapped" />
+
+	        <LinearLayout
+	            android:id="@+id/linearLayout2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_marginTop="10dp" >
+
+	            <ImageView
+	                    android:id="@+id/countryflag1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:paddingRight="20dp"
+	                    android:layout_marginTop="5dp" />
+	            <EditText
+	                android:id="@+id/et_map_country_code"
+	                android:layout_width="59dp"
+	                android:layout_height="wrap_content"
+	                android:inputType="number"
+	                android:maxLength="3"
+	                android:hint="ISD code" >
+
+	                <requestFocus
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" />
+
+	            </EditText>
+
+	            <EditText
+	                android:id="@+id/et_map_phone_no"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:inputType="phone"
+	                android:maxLength="11" 
+	                android:hint="enter mobile no. without 0"/>
+	       	 </LinearLayout>
+
+	        <TextView
+	            android:id="@+id/tv_pin_expiry"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="" />
+
+	        <Button
+	            android:id="@+id/btnMap"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="155dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center"
+	            android:layout_marginTop="8dp"
+	            android:background="@drawable/buttonbackground"
+	            android:text="@string/map"
+	            android:onClick="dispatch" />
+
+	        <RelativeLayout 
+	            android:id="@+id/relativedeact"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="8dp">
+	        <Button
+	            android:id="@+id/btnDeact_ActActiv"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="155dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center"
+	            android:layout_marginTop="10dp"
+	            android:layout_centerHorizontal="true"
+	            android:background="@drawable/buttonbackground"
+	            android:text="@string/deactbutt"
+	            android:onClick="dispatch" />
+
+	        <ImageView
+	            android:id="@+id/infobutt"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:src="@drawable/information"
+	            android:layout_toRightOf="@id/btnDeact_ActActiv"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginTop="14dp"
+	            android:onClick="infodisp" />
+
+	        </RelativeLayout>
+	        
+	        
+	    </LinearLayout>
+
+</ScrollView>

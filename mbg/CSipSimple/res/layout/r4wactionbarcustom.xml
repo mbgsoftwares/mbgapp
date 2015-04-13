@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#1EBCD4">
+
+    <LinearLayout 
+        	android:layout_centerVertical="true"
+ 			android:layout_width="60dp"
+        	android:layout_height="match_parent"
+        	android:gravity="center_vertical"
+        	android:orientation="horizontal"
+        	android:background="@drawable/selector_action_bar_header"
+        	android:id="@+id/ll_header_finish"
+        	android:clickable="true">
+    
+    <ImageView
+        android:id="@+id/imgBackBtn"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_marginLeft="12dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/whiteback" />    
+    </LinearLayout>
+
+	<ImageButton
+	    android:id="@+id/imgRightMenu"
+	    android:layout_width="50dip"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:visibility="gone"
+	    android:background="@drawable/shoppingcart_selector" />
+	
+	<ImageButton
+	    android:id="@+id/imgOutCredit"
+	    android:layout_width="50dip"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:visibility="gone"
+	    android:background="@drawable/shoppingcart_selector" />
+	
+	<ImageButton
+	    android:id="@+id/imgClearList"
+	    android:layout_width="50dip"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:visibility="gone"
+	    android:background="@drawable/trashwhite" />
+	
+	
+	
+	<ImageButton
+	    android:id="@+id/imgRightMenu_chat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:visibility="gone"
+	    android:background="@drawable/ic_menu_msg_compose_holo_dark_one" />
+	
+	
+	<ImageButton
+	    android:id="@+id/imgAddContact"
+	    android:layout_width="35dip"
+	    android:layout_height="30dip"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+		android:layout_marginRight="15dip"
+		android:visibility="gone"
+	    android:background="@drawable/edit" />
+	
+	
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="119dip"
+	    android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:paddingBottom="5dip"
+		android:visibility="gone"
+	    android:src="@drawable/headerlogocenter" />
+	
+</RelativeLayout>

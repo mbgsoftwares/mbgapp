@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+   
+    android:weightSum="55">
+
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="14"
+       android:weightSum="10"
+       android:gravity="center_horizontal|center_vertical">
+       
+       <TextView
+           android:id="@+id/tvEnter4digitcode" 
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="7"
+           android:textColor="#fff"
+           android:gravity="center_horizontal|center_vertical"
+           android:layout_gravity="center_horizontal|center_vertical"
+           android:text="@string/one_time"
+           />
+       
+   </LinearLayout> 
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="7"
+       android:weightSum="10"
+       android:gravity="center_horizontal|center_vertical">
+       
+       <EditText
+           android:id="@+id/et_enterfourdigit"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal|center_vertical"
+           android:layout_weight="5"
+           android:gravity="center_horizontal"
+           android:ems="4"
+           android:inputType="number"
+		   android:textColor="#000" 
+		   android:background="@drawable/numberstyle_new"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+   </LinearLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2"
+       >
+   </LinearLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="7"
+       android:weightSum="10"
+       android:gravity="center_horizontal|center_vertical">
+       
+       <Button
+                    android:id="@+id/btnGo_fourdigitCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/sign_in_original"
+                    android:text="Go"
+                    android:onClick="sendmatchdetails"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff" />
+   </LinearLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="13"
+       >
+       </LinearLayout>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="6"
+       android:weightSum="10"
+       android:gravity="center_horizontal"
+       >
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="8"
+           android:background="@drawable/verifybuttonbg"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center_vertical"
+           android:weightSum="2"
+            >
+           
+           <TextView 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="@string/resend_code"
+               android:clickable="true"
+               android:onClick="callSMSRend"
+               android:gravity="center_horizontal|center_vertical"
+               android:textColor="#fff"
+               />
+           
+           <TextView 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:clickable="true"
+               android:onClick="call"
+               android:layout_marginLeft="4dp"
+               android:text="@string/get_code_via_call"
+               android:gravity="center_horizontal|center_vertical"
+               android:textColor="#fff"
+               />
+           
+       </LinearLayout>
+       
+       
+       
+       </LinearLayout>
+   
+   
+
+</LinearLayout>

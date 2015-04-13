@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#1EBCD4"
+    android:paddingRight="10dip">
+
+     <LinearLayout
+        android:id="@+id/LnrImgLeftMenu"
+      	android:layout_width="60dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_action_bar_header"
+        android:clickable="true"
+      	android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgLeftMenu"
+            android:layout_width="35dip"
+            android:layout_height="wrap_content"
+        	android:layout_gravity="left"
+          	android:background="@drawable/menubar" />
+    </LinearLayout>
+
+	<ImageButton
+	    android:id="@+id/imgRightMenu"
+	    android:layout_width="50dip"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:visibility="gone"
+	    android:background="@drawable/shoppingcart_selector" />
+	
+	
+	
+    <LinearLayout
+        android:id="@+id/LnrImgRightChat"
+      	android:layout_width="60dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_action_bar_header"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+       android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+        
+	<ImageButton
+	    android:id="@+id/imgOutCredit"
+	    android:layout_width="50dip"
+	    android:layout_height="match_parent"
+	 	android:visibility="gone"
+	    android:background="@drawable/shoppingcart_selector" />
+	
+	<ImageButton
+	    android:id="@+id/imgClearList"
+	    android:layout_width="50dip"
+	    android:layout_height="match_parent"
+
+	    android:visibility="gone"
+	    android:background="@drawable/trashwhite" />
+	
+	
+	
+	<ImageButton
+	    android:id="@+id/imgRightMenu_chat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   	android:visibility="gone"
+	    android:background="@drawable/ic_menu_msg_compose_holo_dark_one" />
+	
+	
+	<ImageButton
+	    android:id="@+id/imgRightMenu_refresh"
+	    android:layout_width="42dip"
+	    android:layout_height="35dip"
+	 	android:background="@drawable/rrefresh" />
+	
+	</LinearLayout>
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="119dip"
+	    android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:paddingBottom="5dip"
+	    android:src="@drawable/headerlogocenter" />
+
+	<ImageView
+	    android:id="@+id/imgVAddcontact"
+	    android:layout_width="35dip"
+	    android:layout_height="35dip"
+	    android:visibility="gone"
+	    android:layout_centerVertical="true"
+	  	android:layout_alignParentRight="true"
+	  	android:background="@drawable/addcontactselector" />
+	
+</RelativeLayout>

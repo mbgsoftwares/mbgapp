@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtVChooseYour"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:text="Choose Destination " />
+
+            <TextView
+                android:id="@+id/txtVCountry"
+                style="@style/TextViewBold"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:textSize="15sp"
+                android:text="COUNTRY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="15"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="50dip"
+                android:layout_marginRight="1dp"
+                android:background="@color/grayLight" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="20dp"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/locationpointer" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnCountryMap"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="8"
+                android:background="@color/grayLight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/hrline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/hzline" />
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/linerMapheading"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="5"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtVCurrentlyMapCounty"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Current Destination Country " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerMapText"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+			
+            <TextView
+                android:id="@+id/txtMapcountry"
+                style="@style/TextViewBold"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginRight="20dip"
+                android:layout_height="wrap_content" />
+            
+
+            <TextView
+                android:id="@+id/txtMapPhone"
+                style="@style/TextViewBold"
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtVEnterDesti"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Destination" />
+
+            <TextView
+                android:id="@+id/txtVDestiPhone"
+                style="@style/TextViewBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="PHONE NO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="15"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingRight="3dp"
+            android:weightSum="8" >
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dip"
+                android:background="@color/grayLight"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/phoneicon" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtMapPhoneNo"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_weight="8"
+                android:background="@drawable/numberstyle"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/txtgray" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/blueDark"
+                android:gravity="center_horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imgActivate"
+                    android:layout_width="30dip"
+                    android:layout_height="26dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/paperplane" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@color/BlueLight"
+                android:text="@string/mapbtn"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

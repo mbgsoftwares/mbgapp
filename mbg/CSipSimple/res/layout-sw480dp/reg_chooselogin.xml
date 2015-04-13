@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323A46"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#323a46"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/worldmap"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/worldmap" />
+
+        <ImageView
+            android:id="@+id/roaming4worldlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dip"
+            android:layout_gravity="center_horizontal"
+         
+            android:src="@drawable/logofront" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/traingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/triangle" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#49c9f2"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" >
+
+                <TextView
+                    android:id="@+id/signuptext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="SIGN UP"
+                   
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#d2dbdf"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:weightSum="40" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="8"
+                    android:orientation="horizontal"
+                    android:weightSum="8" >
+
+                    <LinearLayout
+                        android:layout_width="45dip"
+                        android:layout_height="30dip"
+                        android:background="#4a5963"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp" >
+
+                        <ImageView
+                            android:id="@+id/locationpointer"
+                            android:layout_width="15dip"
+                            android:layout_height="25dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/locationwhite" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/loginCountrySpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="30dip"
+                        android:layout_weight="8"
+                        android:background="@color/grayLight"
+                        android:enabled="false"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="8"
+                    android:background="#d2dbdf"
+                    android:layout_marginBottom="2dip"
+                    android:orientation="horizontal"
+                    android:weightSum="8" >
+
+                    <LinearLayout
+                        android:layout_width="45dip"
+                        android:layout_height="30dip"
+                        android:background="#4a5963"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:id="@+id/imgPhone"
+                            android:layout_width="20dip"
+                            android:layout_height="23dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/phonewhite" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/entermobileno"
+                        android:layout_width="0dp"
+                        android:layout_height="30dip"
+                        android:layout_weight="8"
+                        android:background="@drawable/numberstyle"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="MOBILE NUMBER"
+                        android:inputType="number"
+                        android:textColor="@color/txtgray" >
+                    </EditText>
+                </LinearLayout>
+                
+                
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="5" >
+                </LinearLayout>
+
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="10dip"
+                    android:layout_weight="8"
+                    android:background="#d2dbdf"
+                    android:orientation="horizontal"
+                    android:weightSum="8" >
+
+                    <LinearLayout
+                        android:layout_width="50dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="37dp"
+                        android:background="@color/blueDark"
+                        android:gravity="center_horizontal" >
+
+                        <ImageView
+                            android:id="@+id/imgactivation"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/paperplane" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnverify"
+                        android:layout_width="0dp"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="8"
+                        android:background="@color/BlueLight"
+                      
+                        android:text="GO"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="7" >
+
+                    
+
+                    <TextView
+                        android:id="@+id/termsview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:clickable="true"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center_horizontal"
+                        android:onClick="calltermsview"
+                        android:textColor="@color/txtgray"
+                        android:text="By clicking on GO you accept\nour Terms &amp; Conditions" />
+                </LinearLayout>
+                
+                
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="3" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/black"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#323a46" >
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>

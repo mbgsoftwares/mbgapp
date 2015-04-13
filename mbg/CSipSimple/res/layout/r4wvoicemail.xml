@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="90" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="5" >
+            
+            <TextView
+            android:id="@+id/txtVoicemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBold"
+            android:textSize="30sp"
+          	android:text="VOICE MAIL STATUS" />
+	</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:gravity="center"
+            android:layout_weight="15" >
+
+            <com.roamprocess1.roaming4world.MySwitch
+                    style="@style/mySwitchStyle"
+                    android:id="@+id/switchActivationOrDeActivation"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    mySwitch:pushStyle="true"
+                    mySwitch:textOnThumb="false"
+                    mySwitch:thumbExtraMovement="23dp"
+                    mySwitch:trackTextPadding="2dp"
+                    mySwitch:thumb="@drawable/stoggle_copy1"
+                    mySwitch:track="@drawable/sgroove_copy"
+                    mySwitch:textOn="ON"
+                    mySwitch:textOff="OFF" 
+                    mySwitch:leftBackground="@drawable/sleft_background_copy1"
+                    mySwitch:rightBackground="@drawable/sright_background_copy1"
+                    mySwitch:backgroundMask="@drawable/smask_background_copy"/>
+            
+           <!-- 
+            
+            <ToggleButton
+                android:id="@+id/switchActivationOrDeActivation"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+               
+                android:background="@drawable/roundswitch"
+                android:textOff="@null"
+                android:textOn="@null" />
+                
+                 -->
+</LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="2" >
+            
+             
+            <ImageView
+                
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:src="@drawable/hzline" />
+            
+             
+	</LinearLayout>
+        
+         
+        
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="7" >
+            
+            <TextView
+            android:id="@+id/txtVoiceCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            style="@style/TextViewBold"
+            android:textSize="30sp"
+          	android:text="" />
+	</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="35">
+
+            <ListView
+                android:id="@+id/listVoicemail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:dividerHeight="1dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:listSelector="@drawable/list_selector" >
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/audioView"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+        </LinearLayout>
+    
+    
+    </LinearLayout>
+
+</LinearLayout>

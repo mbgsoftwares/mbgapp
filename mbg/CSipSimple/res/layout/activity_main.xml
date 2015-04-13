@@ -1,0 +1,146 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="536dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EnterPinDrawer" >
+
+     <!-- <Button
+        android:id="@+id/butt"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/buypin" />-->
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_full_name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/enterpin" />
+
+    <TextView
+        android:id="@+id/tvAcDetPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/choosecountry" />
+    <!-- android:entries="@array/country_avail" -->
+    <TextView
+        android:id="@+id/location1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sv_country"
+        android:layout_centerHorizontal="true"
+        android:text="textview" />
+     
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_enterphone"
+        android:layout_centerHorizontal="true" >
+
+        <!-- <EditText
+            android:id="@+id/country_code"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="2" />  -->
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="11" >
+
+           
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAct"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="15dp"
+        android:text="@string/activatebutt"
+        android:background="@drawable/buttonbackground"
+        android:layout_centerHorizontal="true" 
+        android:onClick="callservice" />
+
+    <Spinner
+        android:id="@+id/sv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAcDetPIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/pin_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="8"><requestFocus /></EditText> 
+         
+
+    <TextView
+        android:id="@+id/tv_enterphone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/location1"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/phoneno" />
+
+   
+
+    
+        <ImageButton
+        android:id="@+id/Promo_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:background="@color/white"
+        android:src="@drawable/strip" 
+      	android:visibility="gone"
+        android:onClick="promoservice"/>
+</RelativeLayout>
+</ScrollView>

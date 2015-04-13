@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fff" >
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_db_freecall"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/background_selector_button"
+        >
+     <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Free call"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+        
+        </LinearLayout>
+        
+       <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+    
+    
+      <LinearLayout
+        android:id="@+id/ll_db_r4wout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/background_selector_button"
+        
+        >
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Roaming4World out"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        />
+        
+    </LinearLayout>
+    
+      <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+      
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:id="@+id/ll_db_dismiss"
+          android:padding="10dp"
+          android:background="@drawable/background_selector_button"
+          android:gravity="center_horizontal"
+          android:clickable="true"
+          >
+          
+           <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Cancel"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        />
+   
+          
+          
+      </LinearLayout>
+      
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight"
+    android:orientation="vertical" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight"
+    android:orientation="vertical" >
+
+    
+      <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+      <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+         	android:gravity="center_horizontal"
+         	android:background="@drawable/entersim"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+       
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_DeactivateTextLine1"
+                style="@style/TextVBebasFontGrayBold"
+                android:capitalize="characters"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                
+                android:layout_gravity="center_horizontal"
+                android:text="Please Ensure You Have"
+                android:textSize="20sp" />
+              
+              <TextView
+                android:id="@+id/tv_DeactivateTextLine2"
+                style="@style/TextVBebasFontGrayBold"
+                android:capitalize="characters"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                
+                android:layout_gravity="center_horizontal"
+                android:text="your home network "
+                android:textColor="@color/redLight"
+                android:textSize="20sp" />
+              <TextView
+                android:id="@+id/tv_DeactivateTextLine3"
+                style="@style/TextVBebasFontGrayBold"
+                android:capitalize="characters"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+             
+                android:text="SIM card"
+                android:textColor="@color/redLight"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp" />
+              
+                <TextView
+                android:id="@+id/tv_DeactivateTextLine4"
+                style="@style/TextVBebasFontGrayBold"
+                android:capitalize="characters"
+               	android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+           
+                android:text="\nIn your phone"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp" />
+               
+
+				<TextView
+                android:id="@+id/tv_DeactivateTextLine5"
+                style="@style/TextVBebasFontGrayBold"
+                android:capitalize="characters"
+               	android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+          
+                android:textColor="@color/redLight"
+                android:text="before clicking the"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp" />
+				
+				<TextView
+                android:id="@+id/tv_DeactivateTextLine6"
+                style="@style/TextVBebasFontGrayBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:capitalize="characters"
+                android:gravity="center_horizontal"
+                android:text="Re Run Code Button."
+             
+                android:textAllCaps="true"
+                android:textColor="@color/redLight"
+                android:textSize="20sp" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/red"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@color/blueDark" >
+
+                <ImageView
+                    android:id="@+id/imgActivate"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/deactivateimg" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnReRunCode"
+                android:layout_width="0dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                style="@style/TextViewNormal"
+                android:layout_weight="8"
+                android:background="@color/BlueLight"
+				android:text="Re-Run Code"
+                android:textColor="#fff"
+                android:textStyle="bold" >
+            </Button>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@color/BlueLight" >
+
+                <ImageView
+                    android:id="@+id/imgActivate"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

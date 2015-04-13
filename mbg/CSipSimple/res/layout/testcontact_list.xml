@@ -1,0 +1,55 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialerbgtwo"
+    android:layout_height="match_parent" >
+	
+   
+       <RelativeLayout
+        android:id="@+id/searchBarContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+     	android:background="@android:drawable/edit_text"
+        android:scaleType="fitCenter">
+
+            <ImageButton
+                android:id="@+id/button_search"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/search"
+                android:contentDescription="Search..."
+                android:scaleType="fitCenter"/>
+
+            <EditText
+                android:id="@+id/input_search_query"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/button_search"
+                android:background="@null"
+                android:hint="Search..."
+                android:maxLines="1"
+                android:paddingLeft="8dip"
+                android:paddingRight="4dip"
+                android:singleLine="true"
+                android:textSize="15sp" 
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                android:focusableInTouchMode="true"/>
+       
+    </RelativeLayout>
+    
+    
+   	<com.roamprocess1.roaming4world.contactlist.ExampleContactListView
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_below="@id/searchBarContainer"
+	    android:id="@+id/listview" />
+   
+
+</RelativeLayout>

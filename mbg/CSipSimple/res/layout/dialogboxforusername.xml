@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        
+        <EditText
+        android:id="@+id/EdtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User Name"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:maxLength="14"
+        android:inputType="textCapSentences"
+        android:background="@drawable/lower_border_edittext" >
+		</EditText>
+    </LinearLayout>
+	
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:weightSum="10"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnUserNameOk"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:text="OK"
+            android:textColor="#000"
+            android:background="@drawable/background_selector_button" />
+        
+        <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+
+        <Button
+            android:id="@+id/btnUserNameCancel"
+            android:layout_width="0dp"
+            android:textColor="#000"
+            android:layout_weight="5"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:background="@drawable/background_selector_button" />
+    </LinearLayout>
+
+</LinearLayout>

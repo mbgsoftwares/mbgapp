@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#D6D6D6"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+  		android:gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:textStyle="bold"
+        android:textColor="@color/btnblue"
+        android:textSize="20sp"
+        android:text="R4W Out Credit" />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#189AD1" />
+    
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dip"
+        android:text="@string/outcallmessage" />
+	<!-- 
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Choose the amounbt of credits:" />
+     -->
+    <LinearLayout
+        		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:orientation="vertical">
+				<Button
+				    android:id="@+id/btn10"
+				    android:layout_width="180dip" 
+				    android:layout_height="wrap_content"
+					android:textColor="@color/black"
+				    android:layout_marginBottom="5dip"
+				  	android:background="@drawable/rounder_corner_selector_grey"
+				  	android:text="@string/d10"/>
+				
+				<Button
+				    android:id="@+id/btn20"
+				    android:layout_width="180dip" 
+				    android:layout_height="wrap_content"
+					android:textColor="@color/black"
+				  	android:background="@drawable/rounder_corner_selector_grey"
+				    android:layout_marginBottom="5dip"
+				  	android:text="@string/d20"/>
+        
+				<Button
+				    android:id="@+id/btn30"
+				    android:layout_width="180dip" 
+				    android:layout_height="wrap_content"
+				  	android:background="@drawable/rounder_corner_selector_grey"
+					android:textColor="@color/black"
+				     android:layout_marginBottom="5dip"
+				  	android:text="@string/d30"/>
+				
+				<Button
+				    android:id="@+id/btngetrates"
+				    android:layout_width="180dip" 
+				    android:layout_height="wrap_content"
+				  	android:textColor="@color/black"
+				  	android:visibility="gone"
+				     android:layout_marginBottom="5dip"
+				  	android:text="@string/getrates"/>
+				<Button
+				    android:id="@+id/btnmaybelater"
+				    android:layout_width="180dip" 
+				 	 android:textColor="@color/black"
+				    android:layout_height="wrap_content"
+				  	android:background="@drawable/rounder_corner_selector_grey"
+				     android:layout_marginBottom="5dip"
+				  	android:text="@string/maybelater"/>
+        
+        
+				
+        
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

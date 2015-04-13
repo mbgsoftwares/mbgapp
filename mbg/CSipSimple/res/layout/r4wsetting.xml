@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    
+    
+    
+     <TextView
+         android:id="@+id/tv_setting_userNumber" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dp"
+        />
+     
+    <TextView 
+        android:id="@+id/tv_setting_userbalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        />
+	<ListView 
+    android:id="@+id/lv_setting_options_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#D6D6D6"
+    android:dividerHeight="1dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+     />
+    
+    
+</LinearLayout>

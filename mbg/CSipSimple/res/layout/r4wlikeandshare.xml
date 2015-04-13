@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grayLight"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:weightSum="90" >
+    
+    
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/deactivateband"
+            android:orientation="vertical" >
+        </LinearLayout>
+        
+    
+    <com.roamprocess1.roaming4world.FacebookAuthButton
+        android:id="@+id/btn_auth"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+       
+        android:visibility="gone"
+        android:background="#a02a8a"/>
+    
+    
+   
+    
+    <Button
+        android:id="@+id/btn_like"
+         android:layout_marginTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Like Us On Facebook"
+        android:background="@color/BlueLight"
+        android:visibility="visible"/>
+
+</LinearLayout>
+
+</LinearLayout>

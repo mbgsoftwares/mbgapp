@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (C) 2010 Regis Montoya (aka r3gis - www.r3gis.fr)
+	
+	
+	This file is part of CSipSimple. CSipSimple is free software: you can
+	redistribute it and/or modify it under the terms of the GNU General
+	Public License as published by the Free Software Foundation, either
+	version 3 of the License, or (at your option) any later version.
+
+	CSipSimple is distributed in the hope that it will be useful, but
+	WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+	General Public License for more details. You should have received a
+	copy of the GNU General Public License along with CSipSimple. If not,
+	see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="for_incoming"
+        android:title="@string/for_incomings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_wifi_in"
+            android:summary="@string/use_wifi_in_desc"
+            android:title="@string/use_wifi" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_3g_in"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_3g" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_gprs_in"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_gprs" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_edge_in"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_edge" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_other_in"
+            android:summary="@string/use_other_in_desc"
+            android:title="@string/use_other" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_anyway_in"
+            android:summary="@string/use_anyway_desc"
+            android:title="@string/use_anyway" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="for_outgoing"
+        android:title="@string/for_outgoings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_wifi_out"
+            android:summary="@string/use_wifi_out_desc"
+            android:title="@string/use_wifi" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_3g_out"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_3g" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_gprs_out"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_gprs" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_edge_out"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_edge" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_other_out"
+            android:summary="@string/use_other_out_desc"
+            android:title="@string/use_other" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_anyway_out"
+            android:summary="@string/use_anyway_desc"
+            android:title="@string/use_anyway" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

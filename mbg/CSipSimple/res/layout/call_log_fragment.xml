@@ -1,0 +1,85 @@
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/generic_list_progress_view" />
+
+    <FrameLayout
+        android:id="@+id/listContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10" >
+
+                <Button
+                    android:id="@+id/btn_callLog_allCalls"
+                    android:layout_width="130dip"
+                    android:layout_height="35dp"
+                    android:text="All"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_callLog_MissedCalls"
+                    android:layout_width="130dip"
+                    android:layout_height="35dp"
+                    android:text="Missed"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/right_panel_margin_vertical"
+                android:layout_marginLeft="@dimen/right_panel_margin_left"
+                android:layout_marginTop="@dimen/right_panel_margin_vertical"
+                
+                android:divider="#d6d6d6"
+           		android:dividerHeight=".5dip"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="@dimen/right_panel_fading_edge"
+                android:scrollbarStyle="outsideOverlay" />
+
+            <ListView
+                android:id="@+id/lv_missed_Calls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/right_panel_margin_vertical"
+                android:layout_marginLeft="@dimen/right_panel_margin_left"
+                android:layout_marginTop="@dimen/right_panel_margin_vertical"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="@dimen/right_panel_fading_edge"
+                android:scrollbarStyle="outsideOverlay"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_call_history"
+            android:textColor="#5e5e5e"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </FrameLayout>
+
+</FrameLayout>

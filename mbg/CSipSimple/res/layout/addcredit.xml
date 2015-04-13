@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#fff"
+     android:weightSum="100"
+     android:paddingLeft="15dp"
+     android:paddingRight="15dp" >
+     
+  
+        
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="CREDIT BALANCE"
+        android:layout_marginTop="10dp"
+        android:textColor="#1EBCD4"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#1EBCD4"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+         android:orientation="horizontal"
+         android:weightSum="100"
+        >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+	        android:layout_weight="40"
+	        android:layout_height="match_parent"
+	     	android:orientation="vertical"
+	        >
+            
+		   <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:text="BALANCE"
+		        android:layout_marginTop="10dp"
+		        android:textColor="#000"
+		        />
+		   
+		   <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:text="$ 0"
+		        android:id="@+id/tv_bal_add_credit"
+		        android:layout_marginTop="10dp"
+		        android:textColor="#000"
+		        android:visibility="gone"
+		        />
+		   
+	<ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:id="@+id/pb_bal_add_credit" />
+		            
+        </LinearLayout>
+
+      <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="60"
+        android:layout_height="match_parent"
+     	android:orientation="vertical"
+        >
+     
+   	 <Button
+            android:id="@+id/btn_ten_addcredit"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:text="ADD CREDIT $ 10"
+         	android:textStyle="bold"
+            android:textColor="#1EBCD4"
+            android:background="@drawable/buttonborder"
+            android:textSize="12sp"
+            android:layout_marginTop="13dp"
+            android:layout_gravity="center_vertical|center_horizontal" /> 
+    <Button
+            android:id="@+id/btn_twnty_addcredit"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:text="ADD CREDIT $ 20"
+         	android:textStyle="bold"
+            android:textColor="#1EBCD4"
+            android:background="@drawable/buttonborder"
+            android:layout_gravity="center_vertical|center_horizontal" 
+            android:textSize="12sp"
+            android:layout_marginTop="13dp" /> 
+    <Button
+            android:id="@+id/btn_thrty_addcredit"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:text="ADD CREDIT $ 30"
+         	android:textStyle="bold"
+            android:textColor="#1EBCD4"
+            android:background="@drawable/buttonborder"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical|center_horizontal" 
+            android:layout_marginTop="13dp" /> 
+    <Button
+            android:id="@+id/btn_frty_addcredit"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:text="ADD CREDIT $ 40"
+         	android:textStyle="bold"
+            android:textColor="#1EBCD4"
+            android:background="@drawable/buttonborder"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical|center_horizontal" 
+            android:layout_marginTop="13dp" />
+    
+    <Button
+            android:id="@+id/btn_ffty_addcredit"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:text="ADD CREDIT $ 50"
+         	android:textStyle="bold"
+            android:textColor="#1EBCD4"
+            android:background="@drawable/buttonborder"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical|center_horizontal" 
+            android:layout_marginTop="13dp" />
+        
+    </LinearLayout>
+    
+      </LinearLayout>
+    
+     <LinearLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:orientation="vertical"
+        >
+    
+    
+   <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="What is R4W Out?"
+        android:layout_marginTop="10dp"
+        android:textColor="#1EBCD4"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#1EBCD4"
+        />
+    
+      <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R4W Our credit lets you call mobile and landline phone numbers at  attractive low rates."
+        android:layout_marginTop="10dp"
+        android:gravity="fill_horizontal"
+        android:textColor="#000"
+        android:textSize="14sp"
+        />
+    
+      <Button
+            android:id="@+id/btn_get_rates"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:text="Get Rates"
+         	android:textStyle="bold"
+            android:textColor="#1EBCD4"
+            android:background="@drawable/buttonborder"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal" /> 
+            
+      </LinearLayout>
+    
+</LinearLayout>

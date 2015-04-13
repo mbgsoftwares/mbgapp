@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/payment_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#5e5e5e"
+        android:layout_marginTop="5dip"
+        android:textSize="18sp"
+        android:layout_marginLeft="24dip"
+        android:layout_marginRight="24dip"
+        android:text="@string/addPayment" />
+    
+    
+ 
+    <fragment android:id="@+id/payment_form"
+              android:layout_below="@+id/payment_form_title"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              class="com.roamprocess1.roaming4world.stripepayment.PaymentFormFragment"/>
+
+    <TextView
+        android:id="@+id/token_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/payment_form"
+        android:layout_marginTop="25dp"
+        android:text="@string/paymentMethods" />
+
+    <fragment android:id="@+id/token_list"
+              android:layout_width="fill_parent"
+    			          
+              android:layout_height="fill_parent"
+              android:layout_below="@+id/token_list_title"
+              class="com.roamprocess1.roaming4world.stripepayment.TokenListFragment"/>
+    
+    
+
+</RelativeLayout>

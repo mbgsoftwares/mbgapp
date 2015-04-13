@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:padding="5dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/list_selector"
+    >
+
+    <TextView
+        android:id="@+id/txtDatadisable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      	android:layout_marginRight="20dip"
+      	android:clickable="false"
+      	android:textColor="#AAA"
+      	android:textSize="13sp"
+      	android:enabled="false"
+      	android:layout_marginLeft="20dip"
+      	android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+      
+        android:text="TextView" />
+        
+</LinearLayout>

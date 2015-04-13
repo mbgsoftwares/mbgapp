@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialerbgtwo"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewBold"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:text="Know Your Flight" />
+
+    <EditText
+        android:id="@+id/carrier_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Carrier Code"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:textColor="#FFF" >
+
+       
+    </EditText>
+
+    <EditText
+        android:id="@+id/flight_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:hint="Flight Number"
+        android:inputType="phone"
+        android:textColor="#FFF" >
+
+       
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+        
+      
+
+        <EditText
+            android:id="@+id/dep_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:ems="18"
+            android:hint="YYYY-MM-DD"
+            android:maxLength="10"
+            android:textColor="#FFF"
+            android:inputType="phone"
+             />
+
+        
+
+        
+        <Button
+        android:id="@+id/ibcallDatePicker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       
+        android:background="@drawable/calenderforflightsearch"
+         />
+
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="right" 
+        android:gravity="right">
+
+               
+        <Button
+            android:id="@+id/btnflight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go" />
+
+        <Button
+            android:id="@+id/btnskip"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:text=" Cancel " />
+
+    </LinearLayout>
+    
+    <TextView android:id="@+id/tvdatePicker" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

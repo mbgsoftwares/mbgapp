@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:background="@color/grayLight"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="220dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <!-- 
+            <TextView
+                android:id="@+id/txtmsgdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextViewBold"
+                android:layout_marginTop="10dip"
+                android:text="Contact Name" >
+            </TextView>
+             -->
+
+            <TextView
+                
+                android:id="@+id/txtVCallerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                style="@style/TextViewBold"
+                android:text="8882776441" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     style="@style/TextViewBold"
+                    android:text=" Duration: " />
+                    
+                    
+                    
+                  <TextView
+                    android:id="@+id/txtVduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/redLight"
+                    android:text=" 01:20" />
+                
+          </LinearLayout>
+                    
+              
+
+                
+
+                <TextView
+                    android:id="@+id/txtVtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Today 20mins  ago" >
+                </TextView>
+           
+            
+         
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dip"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imgPlayvoicemail"
+                android:layout_width="25dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/playbtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imgverticalline"
+                android:layout_width="1dp"
+                android:layout_height="60dip"
+                android:background="@drawable/voicemailverticalline" />
+        </LinearLayout>
+        
+        
+          <LinearLayout
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:gravity="clip_vertical"
+            android:layout_marginLeft="10dip"
+             >
+
+            <ImageView
+                android:id="@+id/imgicndownload"
+                android:layout_width="29dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

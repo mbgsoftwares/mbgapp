@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#189AD1"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Countries"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+		<EditText
+            android:id="@+id/db_et_searchcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:focusable="true"
+            android:hint="Search Country"
+            android:gravity="center_horizontal|bottom"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+            android:maxLength="200"
+            android:maxLines="3"
+            android:textSize="15sp"
+            android:textColor="#000" 
+            android:paddingLeft="3dp"
+            android:background="@drawable/lower_border_edittext"/>
+    
+	<TextView 
+        android:id="@+id/db_tv_no_country_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Country Found"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:background="#fff"
+        />
+	
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="8dp"
+	    android:background="#fff"/>
+	
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#189AD1"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Recently Selected"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+	
+	<ListView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/top_lv_selectcontrycode"    
+   		android:layout_gravity="center_vertical|center_horizontal"/>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#000"/>
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#189AD1"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="All Countries"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+			
+    <ListView 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:id="@+id/lv_selectcontrycode"
+    	android:layout_gravity="center_vertical|center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/list_selector"
+    >
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="130dip"
+        android:layout_height="match_parent"
+      	android:layout_marginRight="10dip"
+      	android:clickable="false"
+      	android:textSize="25sp"
+      	android:capitalize="words"
+      	android:textColor="#AAA"
+      	android:enabled="false"
+      	android:layout_marginLeft="20dip"
+      	android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+      	android:text="UserName" />
+    
+    
+    <ImageView
+        android:id="@+id/imgEditUserName"
+        android:layout_width="40dip"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="3dip"
+        android:background="@color/redDrak"
+        android:layout_marginRight="10dip" />
+    
+        
+</LinearLayout>

@@ -1,0 +1,642 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialerbgtwo"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:id="@+id/ll_weatherbg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvweekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            style="@style/TextVBebasFontRedBold"
+            android:textSize="20sp"
+                
+           />
+
+        <TextView
+            android:id="@+id/tvmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            style="@style/TextVBebasFontRedBold"
+            android:textSize="20sp"
+                
+             />
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip" 
+            style="@style/TextVBebasFontweatherblack" android:textSize="20sp"
+           
+             />
+    </LinearLayout>
+	<TextView
+            android:id="@+id/tvcityName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="16sp"
+          	android:layout_weight="13"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#FF8000" />
+	
+	<TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="12sp"
+          	android:layout_weight="8"
+          	android:text="TODAY"
+          	android:textColor="#FF8000"
+          	android:gravity="center_vertical|center_horizontal"
+             />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvclimateMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            style="@style/TextVBebasFontRedBold"
+                android:textSize="20sp"
+                
+             />
+
+        <TextView
+            android:id="@+id/tvclimateDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip" android:textSize="20sp"  style="@style/TextVBebasFontweatherfontblack"
+             />
+    </LinearLayout>
+
+    
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" 
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        
+         <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="5" 
+		        android:gravity="center_vertical|center_horizontal"
+		        >
+         <TextView
+            android:id="@+id/tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MIN : "  
+            android:textColor="#FF8000"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal"
+			 />
+
+        <TextView
+            android:id="@+id/tvtempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+              android:textColor="#FF8000"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal"
+		
+				 />
+		</LinearLayout>
+        <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="5" 
+		        android:gravity="center_vertical|center_horizontal"
+		        >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Max : "  
+            android:textColor="#FF8000"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal"
+			 />
+
+        <TextView
+            android:id="@+id/tvtempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+		    android:textColor="#FF8000"
+            android:textSize="12sp"
+		/>
+        </LinearLayout>
+        
+         </LinearLayout>
+    <View android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50" 
+        android:gravity="center_vertical|center_horizontal"
+        >
+    
+        <ImageView
+                    android:id="@+id/iv_mainTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/heavyrain" />
+        
+        
+        </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" 
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="10"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        >
+        
+         <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="5" 
+		        android:gravity="center_vertical|center_horizontal"
+		        >
+         <TextView
+            android:id="@+id/tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MIN : "  
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal"
+			 />
+
+        <TextView
+            android:id="@+id/tvtempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+              android:textColor="#fff"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal"
+		
+				 />
+		</LinearLayout>
+        <LinearLayout
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="5" 
+		        android:gravity="center_vertical|center_horizontal"
+		        >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Max : "  
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal"
+			 />
+
+        <TextView
+            android:id="@+id/tvtempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+		    android:textColor="#fff"
+            android:textSize="12sp"
+		/>
+        </LinearLayout>
+        
+         </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+			android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Humidity"
+            android:textColor="#FFf"
+            style="@style/TextVBebasFontRedBold"
+                android:textSize="20sp"
+                
+             />
+
+        <TextView
+            android:id="@+id/tvhumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip" android:textSize="20sp"  style="@style/TextVBebasFontweatherfontblack"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="TEMP" android:textColor="#fff"
+            style="@style/TextVBebasFontRedBold"
+                android:textSize="20sp"
+                
+             />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="MIN : "  style="@style/TextVBebasFontweatherfontblack"
+             />
+
+        <TextView
+            android:id="@+id/tvtempMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip" android:textSize="20sp"  style="@style/TextVBebasFontweatherfontblack"
+             />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Max : "  style="@style/TextVBebasFontweatherfontblack"
+             />
+
+        <TextView
+            android:id="@+id/tvtempMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+             style="@style/TextVBebasFontweatherfontblack"
+            android:layout_marginTop="10dip" android:textSize="20sp" />
+    </LinearLayout>
+
+    <View android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    
+    <HorizontalScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:fillViewport="true" android:scrollbars="none" >
+- 
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+- 
+
+            
+-			 <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:padding="2dp"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvweekday1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+                   />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+                   />
+
+                <TextView
+                    android:id="@+id/tvtempmin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tvweekday2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                   />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                    />
+
+                <TextView
+                    android:id="@+id/tvtempmin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             		android:layout_marginTop="5dip" />
+            </LinearLayout>
+- 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="2dp"
+	            android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvweekday3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"  
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             		/>
+
+                <TextView
+                    android:id="@+id/tvtempmin3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             		android:layout_marginTop="5dip"  />
+            </LinearLayout>
+- 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="2dp"
+	            android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tvweekday4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"  
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                     />
+
+                <TextView
+                    android:id="@+id/tvtempmin4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dip" />
+            </LinearLayout>
+- 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+           		android:layout_height="wrap_content"
+          		android:padding="2dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tvweekday5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                   />
+
+                <TextView
+                    android:id="@+id/tvtempmin5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+              />
+            </LinearLayout>
+- 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="2dp"
+	            android:orientation="vertical" 
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvweekday6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"  
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                     /> 
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                    />
+
+                <TextView
+                    android:id="@+id/tvtempmin6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dip" />
+            </LinearLayout>
+- 
+
+            <LinearLayout
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+           	    android:orientation="vertical" 
+                android:padding="2dp"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvweekday7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" 
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:src="@drawable/heavyrain" />
+
+                <TextView
+                    android:id="@+id/tvtempmax7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"  
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+             
+                    />
+
+                <TextView
+                    android:id="@+id/tvtempmin7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#FF8000"
+                    android:textSize="12sp"
+              />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

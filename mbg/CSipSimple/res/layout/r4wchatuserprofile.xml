@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/bg_splash_screen" >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="10dp" 
+        android:layout_weight="30">
+    
+        	<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_gravity="center_horizontal"
+		        android:gravity="center_vertical"
+		        android:weightSum="10" >
+		        	
+        	    	<ImageView 
+        	    	    android:layout_width="wrap_content"
+        	    	    android:layout_height="wrap_content"
+						android:id="@+id/iv_chatuserPic"
+						android:clickable="true"
+						android:onClick="callImageActivity"
+        	    	    />
+        	    	
+        			<TextView 
+        			    android:layout_marginLeft="5dp"
+        	    	    android:layout_width="wrap_content"
+        	    	    android:layout_height="wrap_content"
+						android:textColor="#000"
+						android:textStyle="bold"
+						android:textSize="22sp"
+        	    	    android:id="@+id/tv_chatuserName"
+        	    	    android:padding="2dp"
+        	    	    />
+    		</LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:padding="10dp"
+        android:orientation="vertical" >
+        	
+        
+        	<TextView 
+        			    android:layout_marginLeft="5dp"
+        	    	    android:layout_width="wrap_content"
+        	    	    android:layout_height="wrap_content"
+						android:textColor="#189AD1"
+						android:textStyle="bold"
+						android:textSize="18sp"
+        	    	    android:text="STATUS"
+        	    	    android:padding="2dp"
+        	    	    />
+        	
+        	<View 
+        	    android:layout_width="match_parent"
+        	    android:layout_height="2dp"
+        	    android:background="#189AD1"
+        	    />
+        	
+        	<LinearLayout 
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"
+        	    android:padding="5dp"
+        	    android:weightSum="10"
+        	    >
+
+        			<TextView
+        			    android:id="@+id/tv_userStatusShow"
+        			    android:layout_width="wrap_content"
+        			    android:layout_height="wrap_content"
+        			    android:layout_marginLeft="5dp"
+        			    android:gravity="center_vertical"
+        			    android:padding="2dp"
+        			    android:text="Status"
+        			    android:textColor="#000"
+        			    android:textSize="14sp" />
+			</LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:padding="10dp"
+        android:orientation="vertical" >
+        	
+        
+        	<TextView 
+        			    android:layout_marginLeft="5dp"
+        	    	    android:layout_width="wrap_content"
+        	    	    android:layout_height="wrap_content"
+						android:textColor="#189AD1"
+						android:textStyle="bold"
+						android:textSize="18sp"
+        	    	    android:text="PHONE"
+        	    	    android:padding="2dp"
+        	    	    />
+        	
+        	<View 
+        	    android:layout_width="match_parent"
+        	    android:layout_height="2dp"
+        	    android:background="#189AD1"
+        	    />
+        	
+        	<LinearLayout 
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"
+        	    android:padding="5dp"
+        	    android:weightSum="10"
+        	    >
+        					<LinearLayout 
+					        	    android:layout_width="0dp"
+					        	    android:layout_height="match_parent"
+					        	    android:padding="5dp"
+					        	    android:layout_weight="6"
+					        	    android:orientation="vertical"
+					        	    >
+					        			
+							         	<TextView 
+							        			    android:layout_marginLeft="5dp"
+							        	    	    android:layout_width="wrap_content"
+							        	    	    android:layout_height="wrap_content"
+													android:textColor="#000"
+													android:textSize="14sp"
+							        	    	    android:text="Call Mobile"
+							        	    	    android:padding="2dp"
+							        	    	    />
+			
+							         	<TextView 
+							        			    android:layout_marginLeft="5dp"
+							        	    	    android:layout_width="wrap_content"
+							        	    	    android:layout_height="wrap_content"
+													android:textColor="#000"
+													android:textSize="16sp"
+													android:text="78897897"
+							        	    	    android:id="@+id/tv_chatuserNumber"
+							        	    	    android:padding="2dp"
+							        	    	    />
+							        	    
+        	    				</LinearLayout>
+        	    				
+        					
+        					<LinearLayout
+        					    android:clickable="true"
+        					    android:onClick="callfinish"
+        					    android:layout_width="0dp"
+        					    android:layout_height="50dp"
+        					    android:layout_weight="2"
+        					    android:gravity="center_vertical|center_horizontal"
+        					     >
+        					    			
+        					    			<ImageView 
+				        					    
+				        					    android:layout_width="30dp"
+				        					    android:layout_height="30dp"
+				        					    android:background="@drawable/chat_number"
+				        					    android:layout_gravity="center_vertical"
+				        					    />
+        	    			
+        									    
+        					</LinearLayout>
+        					
+        					<View 
+					        	    android:layout_width="2dp"
+					        	    android:layout_height="50dp"
+					        	    android:background="#189AD1"
+					        	    />
+        					
+        					<LinearLayout
+        					    android:clickable="true"
+        					    android:onClick="callfinish"
+        					    android:layout_width="0dp"
+        					    android:layout_height="50dp"
+        					    android:layout_weight="2"
+        					    android:gravity="center_vertical|center_horizontal"
+        					     >
+        					    			
+        					    			<ImageView 
+				        					    
+				        					    android:layout_width="30dp"
+				        					    android:layout_height="30dp"
+				        					    android:background="@drawable/chat_ic_tab_selected_chat"
+				        					    android:layout_gravity="center_vertical"
+				        					    android:onClick="callfinish"
+				        					    />
+        	    			
+        									    
+        					</LinearLayout>
+        					
+        	</LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

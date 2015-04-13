@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="10dp"
+    android:background="@drawable/bg_splash_screen"
+    android:weightSum="100" >
+    
+    <Button 
+        android:id="@+id/btn_removeProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Remove Profile Pic"
+        android:background="@drawable/chatactionbarselector"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        />
+        
+    <Button 
+        android:id="@+id/btn_changeUserName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Change UserName"
+        android:background="@drawable/chatactionbarselector"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:onClick="editusername"
+        />
+    
+      <Button 
+        android:id="@+id/btn_updateStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Update Status"
+        android:background="@drawable/chatactionbarselector"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        />
+
+</LinearLayout>

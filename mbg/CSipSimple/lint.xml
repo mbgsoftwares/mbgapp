@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/account_chooser_button.xml" />
+    </issue>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src/com/roamprocess1/roaming4world/roaming4world/RegChooseLogin.java" />
+        <ignore path="src/com/roamprocess1/roaming4world/roaming4world/RegSignUp.java" />
+        <ignore path="src/com/roamprocess1/roaming4world/ui/RContactlist.java" />
+        <ignore path="src/com/roamprocess1/roaming4world/ui/SipHome.java" />
+    </issue>
+    <issue id="TypographyEllipsis" severity="ignore" />
+</lint>

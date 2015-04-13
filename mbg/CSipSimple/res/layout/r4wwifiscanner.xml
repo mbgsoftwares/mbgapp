@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:layout_weight="20"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/tvwifiscan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:src="@drawable/wifitowerpng"
+             />
+        
+         <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent" 
+        android:layout_weight="5"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center">
+            <Button android:layout_width="150dip" 
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:id="@+id/btAll_wifi_Scan"
+                    android:text="All Wifi"/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center">
+            
+            <Button
+                    android:layout_width="150dip" 
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btopenwifi"
+                    android:text="Open Wifi" />
+            
+        </LinearLayout>
+    </LinearLayout>
+        
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="#000"></LinearLayout>
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+ 			android:layout_weight="9"
+            
+            android:weightSum="9"
+           >
+            
+          
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_horizontal" />
+
+            <TextView
+             android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="STRENGTH"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:gravity="left"/>
+            
+            <TextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SECURITY"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:gravity="center_horizontal"/>
+            
+        </LinearLayout> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical" 
+        android:id="@+id/llwifiscanlist"
+        android:layout_weight="70"
+        android:visibility="gone">
+        
+        <ListView
+        android:id="@+id/lvwifiscan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        />
+    </LinearLayout>
+    
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+ 			android:layout_weight="70"
+            android:gravity="center"
+            android:id="@+id/llNoOpenWifi"
+            android:visibility="visible">
+            
+            <TextView
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="No Open Wi-Fi "
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+           
+            
+        </LinearLayout> 
+    
+    </LinearLayout>
+    
+
